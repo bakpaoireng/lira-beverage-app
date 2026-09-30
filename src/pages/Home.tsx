@@ -1,6 +1,7 @@
 import { Link } from "react-router";
 import { motion } from "framer-motion";
 import { ArrowRight, Leaf, Sparkles, Star } from "lucide-react";
+
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { ProductCard } from "@/components/ProductCard";

@@ -11,7 +11,7 @@ import {
   SheetDescription,
 } from "@/components/ui/sheet";
 import { getProduct, formatPrice, CATEGORY_LABELS } from "@/data/products";
-import { useCart, itemKey } from "@/cart/CartContext";
+import { useCart } from "@/cart/CartContext";
 import { cn } from "@/lib/utils";
 
 const CATEGORY_DOT: Record<string, string> = {
@@ -63,7 +63,7 @@ export function CartDrawer() {
   return (
     <Sheet open={isCartOpen} onOpenChange={(open) => !open && closeCart()}>
       <SheetContent side="right" className="flex w-full flex-col gap-0 bg-cream sm:max-w-md">
-        <SheetHeader className="border-b border-border/60 pb-4">
+        <SheetHeader className="border-b border-border/60 pr-12 pb-4">
           <SheetTitle className="flex items-center gap-2 font-display text-lg font-bold text-ink">
             <ShoppingBag className="size-5 text-primary" />
             Your Cart

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Leaf, Recycle, Sparkles, Star } from "lucide-react";
+import { Leaf, Recycle, Sparkles } from "lucide-react";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -217,6 +217,3 @@ export default function About() {
     </div>
   );
 }
-
-// Star icon kept for potential future use in ratings contexts
-void Star;

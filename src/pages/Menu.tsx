@@ -23,8 +23,8 @@ import { cn } from "@/lib/utils";
 const FILTERS: { value: Category | "all"; label: string }[] = [
   { value: "all", label: "All" },
   { value: "matcha", label: CATEGORY_LABELS.matcha },
-  { value: "milktea", label: CATEGORY_LABELS.milktea },
   { value: "chocolate", label: CATEGORY_LABELS.chocolate },
+  { value: "milktea", label: CATEGORY_LABELS.milktea },
 ];
 
 type SortKey = "popular" | "price-asc" | "price-desc" | "rating";
@@ -32,7 +32,6 @@ type SortKey = "popular" | "price-asc" | "price-desc" | "rating";
 export default function Menu() {
   const [params, setParams] = useSearchParams();
   const query = params.get("q") ?? "";
-  const drinkParam = params.get("drink");
   const [sort, setSort] = useState<SortKey>("popular");
 
   const setQuery = (next: string) => {
